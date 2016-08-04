@@ -1,0 +1,37 @@
+.projects {
+  .aside {
+    background-color: $white;
+  }
+  .main {
+
+  }  
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	 .projects {
+    background-color: $dark-gray;
+    .aside {
+      background-color: $dark-gray;
+      color: $white;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: right;
+      .url {
+        color: $url-color;
+      }
+    }
+    .main {
+      background-color: $white;
+      margin-top: 0;
+      padding-left: 0;
+      &:last-child:not(:first-child) {
+        float: left;
+      }
+
+      .container {
+        width: rem-calc(630px);
+      }
+    }
+  }
+}

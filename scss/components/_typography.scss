@@ -1,0 +1,90 @@
+body {
+
+}
+
+h1, h2, h3 {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+h3 {
+	color: $red-text;
+}
+a {
+	color: $dark-gray;
+}
+a:hover {
+	color: $red-text;
+}
+
+.about {
+	.intro {
+		font-size: 1rem;
+		line-height: 1.5;
+		color: $dark-gray;
+	}
+}
+h1 {
+	position: relative;
+		&:before {
+      content: '';
+      position: absolute;
+      top: 3rem;
+      width: 10%;
+      height: 0.1em;
+      background: $dark-gray;
+      left: 0;
+  }
+}
+
+
+/* Voor the line above h2 on desktop */
+
+@media screen and (min-width: 64em) { 
+	.aside {
+			h2 {
+				position: relative;
+				&:before {
+		      content: '';
+		      position: absolute;
+		      //top: 1.15em;
+		      width: 70%;
+		      height: 0.1em;
+		      background: #ddd;
+		      right: 0;
+		  }
+		}
+	}	
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?vqel88');
+    src:    url('../fonts/icomoon.eot?vqel88#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?vqel88') format('truetype'),
+        url('../fonts/icomoon.woff?vqel88') format('woff'),
+        url('../fonts/icomoon.svg?vqel88#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-food:before {
+    content: "\e900";
+}
+.icon-world:before {
+    content: "\e901";
+}
+

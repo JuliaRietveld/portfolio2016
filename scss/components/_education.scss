@@ -1,0 +1,54 @@
+.education {
+
+  .aside {
+    background-color: $white;
+  }
+  .main {
+      h2 {
+        margin-bottom: 0;
+      }
+      .row {
+        h4 {
+          float: left;
+          font-style: italic;
+        }
+        .date {
+          float: right;
+          font-weight: bold;
+          color: $red-text;
+          text-transform: uppercase;
+        }
+    }
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .education {
+    background-color: $dark-gray;
+    .aside {
+      background-color: $dark-gray;
+      color: $white;
+      margin-top: 0;
+      margin-bottom: 0;
+      h2 {
+        text-align: right;
+      }
+    }
+    .main {
+      background-color: $white;
+      margin-top: 0;
+      padding-left: $global-padding * 2;
+      &:last-child:not(:first-child) {
+        float: left;
+      }
+      .edu-item {
+        width: rem-calc(630px);
+        margin-bottom: $global-margin * 5;
+        h2 {
+          padding-top: $global-padding;
+        }
+      }
+    }
+  }
+}

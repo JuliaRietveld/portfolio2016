@@ -1,0 +1,32 @@
+footer {
+  aside {
+    display: none;
+  }
+  .main {
+
+  } 
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	 footer {
+    background-color: $dark-gray;
+    margin-top: 0;
+    .aside {
+      color: $white;
+      margin-top: 0;
+      margin-bottom: 0;
+      h2 {
+        text-align: right;
+      }
+    }
+    .main {
+      background-color: $white;
+      padding-top: $global-padding * 3;
+      padding-left: $global-padding * 2;
+      .do-the-thing {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

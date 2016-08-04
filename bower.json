@@ -1,13 +1,13 @@
 {
-  "name": "foundation-sites-template",
+  "name": "Portfolio for Shopworks",
   "version": "1.0.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Julia Rietveld"
   ],
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Technical challenge for Shopworks",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "http://juliarietveld.nl",
   "dependencies": {
     "foundation-sites": "~6.1.2",
     "motion-ui": "~1.1.0",

@@ -1,0 +1,130 @@
+
+.wrapper {
+  @include grid-row();
+}
+
+//Mobile first
+.personal,
+.about,
+.interest,
+.work,
+.education,
+.skillset,
+.projects {
+  @include grid-row;
+  //margin-top: $global-margin;
+   .aside {
+    margin-top: $global-margin * 3;
+    width: grid-column(10 of 12);
+    @include grid-column-position(center);
+  }
+  .main {
+    margin-bottom: $global-margin * 3;
+    margin-top: $global-margin * 3;
+    width: grid-column(10 of 12);
+    @include grid-column-position(center);
+  }
+}
+
+.personal {
+  .aside {
+    margin-top: 0;
+    width: 100%;
+    .avatar {
+      width: rem-calc(170px);
+      margin: 0 auto;
+      img {
+        padding-top: rem-calc(60px);
+        padding-bottom: rem-calc(60px);
+      }
+    }
+  }
+
+  .main {
+    margin-top: $global-margin * 5;
+    margin-bottom: $global-margin * 2;
+    overflow: hidden;
+
+  	.branding {
+      margin-bottom: $global-margin * 3;
+  	}
+    .contact {
+      .phone,
+      .mail {
+        @include grid-column(6);
+        padding-left: 0;
+        position: relative;
+
+        .my-phone, 
+        .my-email {
+          position: absolute;
+          top: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .main { 
+  	.achivements {         
+      width: grid-column(10 of 12);
+      @include grid-column-position(center);
+      @include grid-row;
+  	}
+  }
+}
+
+.interest {
+  .main {
+    overflow: hidden;
+    .hobby {
+      @include grid-column(6);
+    }
+  }
+}
+
+.work,
+.education {
+  .main {   
+    .row {
+      @include grid-row;
+    }
+  } 
+}
+
+footer {
+  margin-top: $global-margin * 3;
+  aside {
+    display: none;
+  }
+  .main {
+    width: grid-column(10 of 12);
+    @include grid-column-position(center);
+  } 
+}
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .personal,
+  .about,
+  .interest,
+  .work,
+  .education,
+  .skillset,
+  .projects,
+  footer {
+    @include grid-row;
+    .aside {
+      @include grid-column(4);
+    }
+    .main {
+      @include grid-column(8);
+      margin-bottom: 0;
+      padding-top: $global-padding * 3;
+    }
+  }
+}
+
+

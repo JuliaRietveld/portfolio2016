@@ -1,0 +1,71 @@
+.skillset {
+  .aside {
+    background-color: $white;
+  }
+  .main {
+
+    .progress {
+      position: relative;
+      margin-bottom: $global-margin * 2;
+      .skill {
+        font-weight: bold;     
+      }
+        
+      .progress-meter {
+        background-color: $has-progress-color-hover;
+        border-radius: 4px;
+      }
+      .percentage {
+        position: absolute;
+        right: -55px;
+        top: -5px;
+      }
+    }
+    .show-more-skills {
+      border: $dark-gray solid 3px;
+      border-radius: 4px;
+      padding: $global-padding $global-padding*3;
+      color: $black;
+      font-size: 16px;
+      margin-top: $global-margin;
+      margin-bottom: $global-margin;
+      transition: all 0.4s ease;
+      &:hover {
+        color: $white;
+        background-color: $dark-gray;
+      }
+    }
+
+    .more-skills {
+      display: none;
+    }
+  }  
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .skillset {
+    background-color: $dark-gray;
+    .aside {
+      background-color: $dark-gray;
+      color: $white;
+      margin-top: 0;
+      margin-bottom: 0;
+      h2 {
+        text-align: right;
+      }
+    }
+    .main {
+      background-color: $white;
+      margin-top: 0;
+      padding-left: $global-padding * 2;
+      &:last-child:not(:first-child) {
+        float: left;
+      }
+      .main-skills,
+      .more-skills {
+        width: rem-calc(630px);
+      }
+    }
+  }
+}

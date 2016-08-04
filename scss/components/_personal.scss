@@ -1,0 +1,68 @@
+.personal {
+  .avatar {
+    img {
+      border-radius: 50%;
+    }
+  }
+  .main {
+    .contact {
+
+      .icon-container {
+        border-radius: rem-calc(35px);
+        background-color: $black;
+        color: $white;
+        display: inline-block;
+        float: left;
+        height: rem-calc(40px);
+        line-height: rem-calc(35px);
+        margin-right: rem-calc(10px);
+        position: relative;
+        text-align: center;
+        width: rem-calc(40px);
+        i {
+          position: absolute;
+          font-size: 1.3rem;
+        }
+        .fa-envelope-o {
+          left: 9px;
+          top: 8px;
+        }
+        .fa-mobile {
+          font-size: 1.5rem;
+          left: 15px;
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .personal {
+      background-color: $dark-gray;
+
+    .aside {
+      background-color: $dark-gray;
+      margin-top: -10px;
+      .avatar {
+        float: right;
+        margin-right: rem-calc(80px);
+      }
+    }    
+    .main {
+      background-color: $white;
+      margin-top: 0;
+      padding: 2.5rem 1.25rem;
+
+      &:last-child:not(:first-child) {
+        float: left;
+      }
+      .branding,
+      .contact {        
+         width: rem-calc(630px);
+        float: left;
+      }
+    }
+  }
+}

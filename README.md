@@ -1,4 +1,4 @@
-# Portfolio project for Shopworks
+# Portfolio project 2016
 
 If you want to change any sass files
 

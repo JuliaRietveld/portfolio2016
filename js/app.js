@@ -38,7 +38,7 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-	 // Simple elevator usage.
+	 // elevator usage.
     var elementButton = document.querySelector('.elevator');
     var elevator = new Elevator({
         element: elementButton,
